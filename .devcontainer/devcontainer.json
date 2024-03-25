@@ -1,3 +1,4 @@
 {
+  name: "cgroupv2-metrics",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:20"
 }
