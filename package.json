@@ -1,15 +1,19 @@
 {
-  "name": "cgroupv2-kubernetes",
-  "version": "1.0.0",
-  "description": "Utils to read metrics in cgroup v2",
-  "main": "main.ts",
+  "name": "@mercure/cgroupv2-metrics",
+  "version": "0.0.1",
+  "description": "npm utils module to read metrics in cgroup v2",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Thibaut-Mouton/cgroupv2-probes-kubernetes"
+    "url": "git+https://github.com/Thibaut-Mouton/cgroupv2-probes-kubernetes.git"
   },
   "author": "Thibaut-Mouton",
   "license": "MIT",
@@ -25,12 +29,12 @@
   },
   "homepage": "https://github.com/Thibaut-Mouton/cgroupv2-probes-kubernetes#readme",
   "dependencies": {
-    "@types/jest": "29.5.12",
-    "@types/node": "20.11.30",
     "jest": "29.7.0",
     "typescript": "5.4.3"
   },
   "devDependencies": {
-    "ts-jest": "29.1.2"
+    "ts-jest": "29.1.2",
+    "@types/jest": "29.5.12",
+    "@types/node": "20.11.30"
   }
 }

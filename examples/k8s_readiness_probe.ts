@@ -1,5 +1,5 @@
-import {containerMemoryUsageInPercent} from "../lib/memory_utils";
-import {getCpuUsage} from "../lib/cpu_utils";
+import {containerMemoryUsageInPercent} from "../lib/memory/memory_utils";
+import {getCpuUsage} from "../lib/cpu/cpu_utils";
 
 /**
  * Use this function to eject pods from load-balancer

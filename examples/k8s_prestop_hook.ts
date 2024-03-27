@@ -1,5 +1,5 @@
-import {containerMemoryUsageInPercent} from "../lib/memory_utils";
-import {getCpuUsage, sleep} from "../lib/cpu_utils";
+import {containerMemoryUsageInPercent} from "../lib/memory/memory_utils";
+import {getCpuUsage, sleep} from "../lib/cpu/cpu_utils";
 
 /**
  * Use this function combined with the "terminationGracePeriodSeconds" parameter to control the termination of your pod in kubernetes

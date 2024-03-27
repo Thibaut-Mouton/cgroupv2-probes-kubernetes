@@ -7,7 +7,7 @@
 
 ## Installation
 ```
-npm install cgroupv2-metrics
+npm install @mercure/cgroupv2-metrics
 ```
 ## Use case
 
@@ -16,5 +16,10 @@ npm install cgroupv2-metrics
 A pod has a heavy load incoming, and you do not want that pod to be reached by kubernetes internal load-balancer. Since kubernetes does not provide load-balancer over resources consumption, you can use a readiness probe, which check metrics every "x" seconds and trigger the probe if RAM and/or CPU are overloaded. This probe will eject the pod from load-balancer by setting the pod "unavailable". Once consumption will decrease to an acceptable level, probe trigger will stop and the pod will be available from load-balancer again. 
 - Check ```examples``` folder to see how k8s probes can be implemented
 
-## Read values from cgroup v2
 
+## Want to work on project ?
+
+With ```devcontainers```, you can easily start up a dev environment on docker with your favorite IDE without download any package required by the project on your OS.
+Feel free to open PR and submit issues.
+
+Read more on [devcontainers](https://containers.dev)
